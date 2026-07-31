@@ -56,7 +56,6 @@ task.spawn(function()
 		end)
 	end
 
-	-- หา UI อัตโนมัติ
 	local function GetMainUI()
 		for _, v in ipairs(game:GetService("CoreGui"):GetChildren()) do
 			if v:IsA("ScreenGui") and v.Name ~= "CloseUI" then
@@ -105,7 +104,7 @@ task.spawn(function()
 	TextLabel.Position = UDim2.new(0, 0, 0.0212765951, 0)
 	TextLabel.Size = UDim2.new(0, 47, 0, 47)
 	TextLabel.Font = Enum.Font.GothamBold
-	TextLabel.Text = "OFF"
+	TextLabel.Text = ""
 	TextLabel.TextColor3 = Color3.new(1, 1, 1)
 	TextLabel.TextSize = 14
 

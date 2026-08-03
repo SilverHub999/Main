@@ -123,9 +123,9 @@ task.spawn(function()
 		end
 		local VirtualInputManager = game:GetService("VirtualInputManager")
 		TextButton.MouseButton1Down:Connect(function()
-			VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
+			VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.RightControl, false, game)
 			task.wait()
-			VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
+			VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.RightControl, false, game)
 		end)
 		focus = not focus
 	end)
